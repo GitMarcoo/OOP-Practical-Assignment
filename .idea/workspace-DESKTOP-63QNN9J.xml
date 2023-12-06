@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bffae7dd-2b87-43ad-b268-afbd4330bde3" name="Changes" comment="Opdracht Week2">
+      <change afterPath="$PROJECT_DIR$/src/practicumopdracht/Controllers/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practicumopdracht/Controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practicumopdracht/Controllers/WinkelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week3/MainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week3/Teller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week3/TellerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week3/TellerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practicumopdracht/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practicumopdracht/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practicumopdracht/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practicumopdracht/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practicumopdracht/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practicumopdracht/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practicumopdracht/models/Winkel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practicumopdracht/models/Winkel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practicumopdracht/views/ProductView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practicumopdracht/views/ProductView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practicumopdracht/views/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practicumopdracht/views/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practicumopdracht/views/WinkelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practicumopdracht/views/WinkelView.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="207846e2d5af245aff57d801715a2702ed3f92eb" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LeBywKk9pjQc0CdOtATZ3eyONi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/marco/OneDrive - HvA/IdeaProjects/Practicumopdracht-StartProject&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="week3" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bffae7dd-2b87-43ad-b268-afbd4330bde3" name="Changes" comment="" />
+      <created>1676221925684</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676221925684</updated>
+      <workItem from="1676221926857" duration="35000" />
+      <workItem from="1676222041652" duration="428000" />
+      <workItem from="1676222816436" duration="671000" />
+      <workItem from="1676355765044" duration="16789000" />
+      <workItem from="1676890932687" duration="97000" />
+      <workItem from="1676891047503" duration="5465000" />
+      <workItem from="1676916791235" duration="1222000" />
+      <workItem from="1676960307615" duration="10985000" />
+      <workItem from="1676977564087" duration="9000" />
+      <workItem from="1676989909535" duration="1083000" />
+      <workItem from="1677074653656" duration="3981000" />
+      <workItem from="1677098863102" duration="3119000" />
+      <workItem from="1677102083228" duration="43000" />
+      <workItem from="1677143959267" duration="6168000" />
+      <workItem from="1677512613498" duration="10000" />
+      <workItem from="1677948509173" duration="22000" />
+      <workItem from="1678174517766" duration="5930000" />
+      <workItem from="1678202140253" duration="39000" />
+      <workItem from="1678277087194" duration="1228000" />
+      <workItem from="1678286311931" duration="2813000" />
+      <workItem from="1678349080108" duration="334000" />
+    </task>
+    <task id="LOCAL-00001" summary="Opdracht Week1">
+      <created>1676222870129</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676222870129</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Opdracht Week2">
+      <created>1676891445180</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676891445180</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Opdracht Week2">
+      <created>1676892236320</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676892236320</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Opdracht Week1" />
+    <MESSAGE value="Opdracht Week2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Opdracht Week2" />
+  </component>
+</project>

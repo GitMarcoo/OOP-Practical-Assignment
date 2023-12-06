@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>4</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>508</x>
+      <y>444</y>
+      <w>144</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;models&gt;&gt;
+Winkel
+--
+-naam: String
+-stad: String
+--
++Winkel(naam: String, stad: String)
++setWinkelNieuweWaarde(naam: String, stad: String)
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>772</x>
+      <y>472</y>
+      <w>216</w>
+      <h>124</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;models&gt;&gt;
+Product
+--
+-hoortBijWinkel: Winkel
+-naam: String
+-variant: String
+-merk: String
+-inhoud: int
+-prijs: double
+-inAanbieding: boolean
+-laatstePrijsWijziging: LocalDate
+--
++Product(naam: String, variant: String, merk: String, inhoud: int,
+			prijs: double, isAanbieding: boolean, laatstePrijsWijziging: LocalDate,
+			winkel: Winkel)
++setProductNieuweWaarde(naam: String, variant: String, merk: String, inhoud: int,
+			prijs: double, isAanbieding: boolean, laatstePrijsWijziging: LocalDate,
+			winkel: Winkel)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>648</x>
+      <y>460</y>
+      <w>132</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=0..n
+heeft een</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>816</x>
+      <y>64</y>
+      <w>84</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;javafx.application&gt;&gt;
+Application
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>816</x>
+      <y>88</y>
+      <w>84</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Main
+--
++main(args: String[]): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1032</x>
+      <y>140</y>
+      <w>84</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+View
+--
+-root: Parent
+--
+#initializeView(): Parent
++getRoot(): Parent
+_#productListViewVBox: VBox_
+_#tussenlijn: Separator: VBox_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1016</x>
+      <y>232</y>
+      <w>92</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+WinkelView
+--
+-winkelToevoegButton Button
+-nieuwProductButton Button
+--
+#initializeView(): Parent
+-getWinkelToevoegButton(): Button
+-getNieuwProductButton(): Button</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1128</x>
+      <y>232</y>
+      <w>128</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;views&gt;&gt;
+ProductView
+--
+-terugButton Button
+-verwijderProduct Button
+-wijzigProductButton Button
+-productToevoegenButton Button
+-productnaamTextField TextField
+-variantTextField TextField
+-merkTextField TextField
+-datumDatePicker DatePicker
+-aanbiedingCheckBox CheckBox
+-inhoudIntegerField IntegerField
+-inhoudEenheidComboBox ComboBox
+-prijsDoubleField DoubleField
+-winkelComboBox: ComboBox
+--
+#initializeView(): Parent
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1048</x>
+      <y>192</y>
+      <w>20</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1088</x>
+      <y>192</y>
+      <w>88</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>96</y>
+      <w>68</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>68</y>
+      <w>68</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>636</x>
+      <y>60</y>
+      <w>124</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>MainApplication
+--
+-TITLE: String
+-WIDTH: int
+-HEIGHT: int
+_-stage: Stage_
+_-winkelDAO: WinkelDAO_
+_-productDAO: ProductDAO_
+--
++start(stage: Stage): void
+_+switchController(controller: Controller): void_
+_+geefInformatieAlert(melding: String, bericht String): void_
+_+geefBevestigAlert(melding: String, bericht: String: boolean_
+_+getWinkelDAO(): WinkelDAO_
+_+getProductDAO(): ProductDAO_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>676</x>
+      <y>204</y>
+      <w>80</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controller&gt;&gt;
+Controller
+--
+_#menuHelper MenuHelper_
+/+getView(): View/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>268</y>
+      <w>148</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controller&gt;&gt;
+ProductController
+--
+-view: ProductView
+_-productObservableList: ObservableList_
+-productFilteredList: FilteredList
+--
++ProductController()
+-handleFilterWinkel: void
+-setWinkelComboBox: void
+-handleNieuwButton: void
+-handleSelectie(productNieuw Product): void
+-handelProductToevoegenButton(): void
+-handleVerwijderButton(): void
+-handleTerugButton: void
+-valideerInvulling(): boolean
+_+getProductObservableList: ObservableList&lt;Product&gt;_
++handleTerugButton(): void
++valideerInvulling(): boolean
++getView(): View
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>268</y>
+      <w>132</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controller&gt;&gt;
+WinkelController
+--
+-view: WinkelView
+_-winkelObservableList: ObservableList_
+-productFilteredLIst: FilteredList
+--
+-handleZoeken(): void
+-handleWinkelVerwijder: void
+-handleWinkelOpslaanButton: void
+-handleWinkelNieuwButton: void
+-handleSelectie: void
+-handleProductToevoegenButton: void
+-valideerInvulling: boolean
+_+getWinkelObservableList: ObservableList&lt;Winkel&gt;_
++WinkelController()
++handleWinkelToevoegButton(): void
++handleProductToevoegButton(): void
++getView(): View
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>240</y>
+      <w>100</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>230.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>240</y>
+      <w>128</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;300.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>752</x>
+      <y>152</y>
+      <w>288</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>700.0;10.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>808</x>
+      <y>396</y>
+      <w>68</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;190.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>384</y>
+      <w>20</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>692</x>
+      <y>156</y>
+      <w>20</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>188</x>
+      <y>188</y>
+      <w>84</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+DAO&lt;T&gt;
+--
++getAll(): List&lt;T&gt;
++addOrUpdate(object: T): void
++remove(object: T): void
++save(): boolean
++load(): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>104</x>
+      <y>276</y>
+      <w>108</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+WinkelDAO&lt;Winkel&gt;
+--
+#winkels: List&lt;Winkel&gt;
+--
++getAll(): List&lt;Winkel&gt;
++addOrUpdate(winkel: Winkel): void
++getById(id: int): Winkel
++getIdFor(winkel: Winkel): int
++remove(winkel: Winkel): void
+/+save(): boolean/
+/+load(): boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>232</x>
+      <y>276</y>
+      <w>124</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+ProductDAO&lt;Product&gt;
+--
+#producten: List&lt;Product&gt;
+--
++getAll(): List&lt;Product&gt;
++addOrUpdate(product: Product): void
++getAllFor(winkel: Winkel): ArrayList&lt;Product&gt;
++remove(product: Product): void
+/+save(): boolean/
+/+load(): boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>152</x>
+      <y>244</y>
+      <w>76</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>244</x>
+      <y>244</y>
+      <w>60</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>388</y>
+      <w>132</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+TextWinkelDAO&lt;Winkel&gt;
+--
+_-FILENAME: String_
+--
+-controleerOfBestandBestaat(bestand: File): void
++save(): boolean
++load(): boolean
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>376</y>
+      <w>132</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+TextProductDAO&lt;Product&gt;
+--
+_-FILENAME: String_
+--
+-controleerOfBestandBestaat(bestand: File): void
++save(): boolean
++load(): boolean
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>64</x>
+      <y>348</y>
+      <w>88</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>200.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>344</y>
+      <w>88</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>236</x>
+      <y>376</y>
+      <w>88</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+TextProductDAO&lt;Product&gt;
+--
++save(): boolean
++load(): boolean
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>388</y>
+      <w>76</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;data&gt;&gt;
+TextWinkelDAO&lt;Winkel&gt;
+--
++save(): boolean
++load(): boolean
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>164</x>
+      <y>348</y>
+      <w>24</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>272</x>
+      <y>344</y>
+      <w>20</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>484</x>
+      <y>156</y>
+      <w>96</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;utils&gt;&gt;
+MenuHelper
+--
+-bestandGeladen: boolean
+--
++handleBestand(view: View): void
++Opslaan(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>156</x>
+      <y>496</y>
+      <w>148</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;utils&gt;&gt;
+BestandManager
+--
++controlleerOfBestandBestaat(bestand: File): boolean
++verwijderBestand(bestand: File): boolean
++maakBestand(bestand: File): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>184</y>
+      <w>108</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>436</y>
+      <w>100</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>230.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>252</x>
+      <y>424</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;180.0;400.0;10.0</additional_attributes>
+  </element>
+</diagram>
